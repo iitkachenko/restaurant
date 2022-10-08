@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+input, button {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+header img {
+    display: block;
+    width: 100%;
+}
+
+/*** Main ***/
+main {
+    padding: 0 45px;
+}
+
+/*** Product list ***/
+#menu {
+    padding: 60px 0;
+}
+
+.product-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.product {
+    display: flex;
+}
+
+.picture {
+    font-size: 78px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.product-name {
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.product-ingredients {
+    color: #8b8b8b;
+}
+
+.product-price {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.button-add, .button-remove {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dedede;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 32px;
+    color: #3c3c3c;
+}
+
+.button-add:hover, .button-remove:hover {
+    border-color: #999;
+    color: #000;
+}
+
+/*** Cart ***/
+.cart {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+   border: 1px solid #ccc;
+   padding: 10px;
+}
+
+td {
+   text-align: right;
+   font-size: 20px;
+}
+
+.product-name {
+    text-align: left;
+}
+
+.product-quantity {
+    text-align: center;
+}
+
+td .button-add, td .button-remove {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+td .button-remove {
+    margin: 0 5px 0 10px;
+}
+
+.cart-total .total {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+button.green {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    background: #16dB99;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 3px;
+    margin: 10px auto;
+    padding: 18px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button.green:hover {
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+/*** Form ***/
+#form {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    background: #ccc9;
+}
+
+.modal-wrap {
+    width: 80%;
+    max-width: 600px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 30px 25px;
+    background: #fff;
+    filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+}
+
+form input {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 25px;
+    margin: 5px 0;
+}
+
+form button {
+    width: 100%;
+}
+.error {
+    color: darkred;
+}
+
+/*** Thanks ***/
+#thanks {
+    font-size: 32px;
+    text-align: center;
+    margin: -30px auto;
+    padding: 50px 60px;
+    max-width: 600px;
+    background: #ecfdf5;
+    color: #065f46;
+    display: none;
+}
